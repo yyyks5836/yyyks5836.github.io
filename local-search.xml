@@ -5,25 +5,24 @@
   
   <entry>
     <title>Markdown语法学习</title>
-    <link href="/2023/12/19/Markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
-    <url>/2023/12/19/Markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
+    <link href="/2023/12/20/Markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
+    <url>/2023/12/20/Markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
     
-    <content type="html"><![CDATA[<h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><h1 id="Markdown标题"><a href="#Markdown标题" class="headerlink" title="Markdown标题"></a>Markdown标题</h1><h1 id="我展示的是一级标题"><a href="#我展示的是一级标题" class="headerlink" title="我展示的是一级标题"></a>我展示的是一级标题</h1><h2 id="我展示的是二级标题"><a href="#我展示的是二级标题" class="headerlink" title="我展示的是二级标题"></a>我展示的是二级标题</h2><h1 id="标题使用方法：（-1-6）-空格键-名字"><a href="#标题使用方法：（-1-6）-空格键-名字" class="headerlink" title="标题使用方法：（#(1-6） +空格键 +名字)"></a>标题使用方法：（#(1-6） +空格键 +名字)</h1><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="Markdown-标题编号"><a href="#Markdown-标题编号" class="headerlink" title="Markdown 标题编号"></a>Markdown 标题编号</h2><h3 id="My-Great-Heading"><a href="#My-Great-Heading" class="headerlink" title="My Great Heading"></a>My Great Heading</h3>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>起点</title>
-    <link href="/2023/12/19/%E8%B5%B7%E7%82%B9/"/>
-    <url>/2023/12/19/%E8%B5%B7%E7%82%B9/</url>
-    
-    <content type="html"><![CDATA[<h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><h1 id="Markdown标题"><a href="#Markdown标题" class="headerlink" title="Markdown标题"></a>Markdown标题</h1><h1 id="我展示的是一级标题"><a href="#我展示的是一级标题" class="headerlink" title="我展示的是一级标题"></a>我展示的是一级标题</h1><h2 id="我展示的是二级标题"><a href="#我展示的是二级标题" class="headerlink" title="我展示的是二级标题"></a>我展示的是二级标题</h2><h1 id="标题使用方法：（-1-6）-空格键-名字"><a href="#标题使用方法：（-1-6）-空格键-名字" class="headerlink" title="标题使用方法：（#(1-6） +空格键 +名字)"></a>标题使用方法：（#(1-6） +空格键 +名字)</h1><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="Markdown-标题编号"><a href="#Markdown-标题编号" class="headerlink" title="Markdown 标题编号"></a>Markdown 标题编号</h2><h3 id="My-Great-Heading"><a href="#My-Great-Heading" class="headerlink" title="My Great Heading"></a>My Great Heading</h3>]]></content>
+    <content type="html"><![CDATA[<h1 id="Markdown-排版小技巧"><a href="#Markdown-排版小技巧" class="headerlink" title="Markdown 排版小技巧"></a>Markdown 排版小技巧</h1><p>建议<strong>中文和英文之间加空格,中文&#x2F;英文与数据之间也加空格.</strong></p><ol><li><p>一些需要加空格的情况</p><blockquote><p>英文标点符号(,:;?)与后面的字符之间加空格</p><p>当中文或英文使用&gt;(半角)表示路径时,两边加上空格</p></blockquote></li><li><p>不需要加空格的情况</p><blockquote><p>中文标点符号和数字 、中文、英文之间不需要添加空格</p><p>数字和百分号之间不需要添加空格</p><p>数字和单位符号之间不需要添加空格</p><p>英文和数字组成合成的名字不需要添加空格</p><p>当&#x2F;(半角)表示”或”、”路径”时,与前后的字符之间均不加空格</p><p>货币符号后不加空格</p><p>负号后不加空格</p></blockquote></li></ol><p>全角与半角:</p><p>全角:中文标点符号是全角,占两个字节</p><p>半角:英文标点符号是半角,占一个字节</p><p>全角: ，。；：！#</p><p>半角:,.;:!#</p><p>在中文排版中,使用全角标点符号。</p><p>英文排版中,使用半角标点符号。</p><p>专有名词使用正确大小写。</p>]]></content>
     
     
+    <categories>
+      
+      <category>blog</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Markdown</tag>
+      
+    </tags>
     
   </entry>
   
