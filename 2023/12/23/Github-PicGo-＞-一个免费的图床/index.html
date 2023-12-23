@@ -1,0 +1,828 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="洋洋要开森">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Github+PicGo &gt; 一个免费的图床 起因：因搭建博客需要插入图片，而Markdown中插入图片又太麻烦了。因为在网上搜索一下之后，找到了一种利用GitHub+PicGol来搭建一个免费的图床。 如果已有GitHub账号，可以直接跳到步骤10。  1. 注册一个GitHub账号,点击一下官网链接2. 点击右上角注册按钮sign up，来到注册页面。    3. 注册页面内输入你的邮箱">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github+PicGo　＞　一个免费的图床">
+<meta property="og:url" content="http://yyyks5836.github.io/2023/12/23/Github-PicGo-%EF%BC%9E-%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E7%9A%84%E5%9B%BE%E5%BA%8A/index.html">
+<meta property="og:site_name" content="洋洋要开森的小屋">
+<meta property="og:description" content="Github+PicGo &gt; 一个免费的图床 起因：因搭建博客需要插入图片，而Markdown中插入图片又太麻烦了。因为在网上搜索一下之后，找到了一种利用GitHub+PicGol来搭建一个免费的图床。 如果已有GitHub账号，可以直接跳到步骤10。  1. 注册一个GitHub账号,点击一下官网链接2. 点击右上角注册按钮sign up，来到注册页面。    3. 注册页面内输入你的邮箱">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/GitHub%E5%AE%98%E7%BD%91.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E9%82%AE%E7%AE%B1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%AF%86%E7%A0%81.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E7%94%A8%E6%88%B7%E5%90%8D.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E9%AA%8C%E8%AF%81%E7%A0%81.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E4%B8%AA%E6%80%A7%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E6%B3%A8%E5%86%8C%E6%88%90%E5%8A%9F%E9%A1%B5%E9%9D%A2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93%E6%88%90%E5%8A%9F.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%8F%B3%E4%B8%8A%E8%A7%92settings.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/Developer%20settings.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/Tokens%20(classic).png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/Generate%20new%20token.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/new%20Token.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E8%AE%BE%E7%BD%AEToken.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E4%BF%9D%E5%AD%98Token.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/PicGo%E7%9A%84%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/PicGo%E7%9A%84%E4%B8%BB%E7%95%8C%E9%9D%A2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%9B%BE%E5%BA%8A.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/GitHub%E5%9B%BE%E5%BA%8A%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E7%9A%84%E5%9B%BE%E7%89%87.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/GitHub%E4%B8%8A%E7%9A%84%E5%9B%BE%E7%89%87.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%9B%BE%E5%BA%8A%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8.png">
+<meta property="article:published_time" content="2023-12-23T12:57:08.000Z">
+<meta property="article:modified_time" content="2023-12-23T12:57:44.475Z">
+<meta property="article:author" content="洋洋要开森">
+<meta property="article:tag" content="GitHub、PicGo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/GitHub%E5%AE%98%E7%BD%91.png">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>Github+PicGo　＞　一个免费的图床 - 洋洋要开森的小屋</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"yyyks5836.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"left","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>洋洋要开森的小屋</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/images/post.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Github+PicGo　＞　一个免费的图床"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        洋洋要开森
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-12-23 20:57" pubdate>
+          2023年12月23日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          <!-- compatible with older versions-->
+          651 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          <!-- compatible with older versions-->
+          6 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="padding-left: 2rem; margin-right: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Github+PicGo　＞　一个免费的图床</h1>
+            
+              <p id="updated-time" class="note note-info" style="display: none">
+                
+                  
+                    本文最后更新于 2023-12-23T20:57:44+08:00
+                  
+                  
+
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Github-PicGo-一个免费的图床"><a href="#Github-PicGo-一个免费的图床" class="headerlink" title="Github+PicGo &gt; 一个免费的图床"></a>Github+PicGo &gt; 一个免费的图床</h1><blockquote>
+<p>起因：因搭建博客需要插入图片，而Markdown中插入图片又太麻烦了。因为在网上搜索一下之后，找到了一种利用GitHub+PicGol来搭建一个免费的图床。</p>
+<p><strong>如果已有GitHub账号，可以直接跳到步骤10。</strong></p>
+</blockquote>
+<h1 id="1-注册一个GitHub账号-点击一下官网链接"><a href="#1-注册一个GitHub账号-点击一下官网链接" class="headerlink" title="1. 注册一个GitHub账号,点击一下官网链接"></a>1. 注册一个GitHub账号,点击一下<a target="_blank" rel="noopener" href="https://github.com/" title="GitHub">官网链接</a></h1><h1 id="2-点击右上角注册按钮sign-up，来到注册页面。"><a href="#2-点击右上角注册按钮sign-up，来到注册页面。" class="headerlink" title="2. 点击右上角注册按钮sign up，来到注册页面。"></a>2. 点击右上角注册按钮sign up，来到注册页面。</h1><p>   <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/GitHub%E5%AE%98%E7%BD%91.png" srcset="/img/loading.gif" lazyload alt="image-20231223183919704"></p>
+<h1 id="3-注册页面内输入你的邮箱，点击Continue"><a href="#3-注册页面内输入你的邮箱，点击Continue" class="headerlink" title="3. 注册页面内输入你的邮箱，点击Continue"></a>3. 注册页面内输入你的邮箱，点击<code>Continue</code><img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E9%82%AE%E7%AE%B1.png" srcset="/img/loading.gif" lazyload alt="image-20231223184625724"></h1><h1 id="4-输入你想要设置的密码和用户名"><a href="#4-输入你想要设置的密码和用户名" class="headerlink" title="4. 输入你想要设置的密码和用户名"></a>4. 输入你想要设置的密码和用户名</h1><p>   <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%AF%86%E7%A0%81.png" srcset="/img/loading.gif" lazyload alt="image-20231223185426487"></p>
+<p>   <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E7%94%A8%E6%88%B7%E5%90%8D.png" srcset="/img/loading.gif" lazyload alt="image-20231223185349272"></p>
+<h1 id="5-进行相应的验证，点击-create-account-后-，会出现这个界面"><a href="#5-进行相应的验证，点击-create-account-后-，会出现这个界面" class="headerlink" title="5. 进行相应的验证，点击 create account 后 ，会出现这个界面"></a>5. 进行相应的验证，点击 create account 后 ，会出现这个界面</h1><p>   <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E9%AA%8C%E8%AF%81%E7%A0%81.png" srcset="/img/loading.gif" lazyload alt="image-20231223185816330"></p>
+<h1 id="6-这时邮箱就会收到一封邮件，输入邮件中的数字页面会自动跳转"><a href="#6-这时邮箱就会收到一封邮件，输入邮件中的数字页面会自动跳转" class="headerlink" title="6. 这时邮箱就会收到一封邮件，输入邮件中的数字页面会自动跳转"></a>6. 这时邮箱就会收到一封邮件，输入邮件中的数字页面会自动跳转</h1><h1 id="7-进行个性化设置"><a href="#7-进行个性化设置" class="headerlink" title="7. 进行个性化设置"></a>7. 进行个性化设置</h1><p>   <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E4%B8%AA%E6%80%A7%E8%AE%BE%E7%BD%AE.png" srcset="/img/loading.gif" lazyload alt="image-20231223185948784"></p>
+<h1 id="8-成功页面"><a href="#8-成功页面" class="headerlink" title="8.成功页面"></a>8.成功页面</h1><p>   <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E6%B3%A8%E5%86%8C%E6%88%90%E5%8A%9F%E9%A1%B5%E9%9D%A2.png" srcset="/img/loading.gif" lazyload alt="image-20231223190045925"></p>
+<h1 id="9-下次登录时，需要点击旁边的sign-in，进入登录页面"><a href="#9-下次登录时，需要点击旁边的sign-in，进入登录页面" class="headerlink" title="9.下次登录时，需要点击旁边的sign in，进入登录页面"></a>9.下次登录时，需要点击旁边的sign in，进入登录页面</h1><p>   <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.png" srcset="/img/loading.gif" lazyload alt="image-20231223190154516"></p>
+<h1 id="10-点击Create-repository-创建一个仓库。"><a href="#10-点击Create-repository-创建一个仓库。" class="headerlink" title="10. 点击Create repository,创建一个仓库。"></a>10. 点击Create repository,创建一个仓库。</h1><p>   <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" srcset="/img/loading.gif" lazyload alt="image-20231223190413902"></p>
+<h1 id="11-跳转到该页面-进行如下操作。"><a href="#11-跳转到该页面-进行如下操作。" class="headerlink" title="11. 跳转到该页面,进行如下操作。  "></a>11. 跳转到该页面,进行如下操作。  <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE.png" srcset="/img/loading.gif" lazyload alt="image-20231223191625946"></h1><p>   <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE2.png" srcset="/img/loading.gif" lazyload alt="image-20231223191219671"></p>
+<h1 id="12-出现这个页面表示新建仓库成功。"><a href="#12-出现这个页面表示新建仓库成功。" class="headerlink" title="12. 出现这个页面表示新建仓库成功。"></a>12. 出现这个页面表示新建仓库成功。</h1><p>   <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93%E6%88%90%E5%8A%9F.png" srcset="/img/loading.gif" lazyload alt="image-20231223192010300"></p>
+<h1 id="13-点击右上角的202312232046496-png头像，单击一下会有该页面出现，再次点击其中的Settings"><a href="#13-点击右上角的202312232046496-png头像，单击一下会有该页面出现，再次点击其中的Settings" class="headerlink" title="13. 点击右上角的202312232046496.png头像，单击一下会有该页面出现，再次点击其中的Settings"></a>13. 点击右上角的202312232046496.png头像，单击一下会有该页面出现，再次点击其中的<code>Settings</code></h1><p>​      <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%8F%B3%E4%B8%8A%E8%A7%92settings.png" srcset="/img/loading.gif" lazyload alt="image-20231223192203114"></p>
+<h1 id="14-出现该页面后，下划找到Developer-settings。"><a href="#14-出现该页面后，下划找到Developer-settings。" class="headerlink" title="14. 出现该页面后，下划找到Developer settings。 "></a>14. 出现该页面后，下划找到<code>Developer settings</code>。 <img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/Developer%20settings.png" srcset="/img/loading.gif" lazyload alt="image-20231223192554725"></h1><h1 id="15-进入下一个页面点击Personal-access-tokens后的-找到下拉列表中的Tokens-classic-并点击它。"><a href="#15-进入下一个页面点击Personal-access-tokens后的-找到下拉列表中的Tokens-classic-并点击它。" class="headerlink" title="15. 进入下一个页面点击Personal access tokens后的^ 找到下拉列表中的Tokens (classic)并点击它。"></a>15. 进入下一个页面点击<code>Personal access tokens</code>后的^ 找到下拉列表中的<code>Tokens (classic)</code>并点击它。<img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/Tokens%20(classic).png" srcset="/img/loading.gif" lazyload alt="image-20231223193411591"></h1><h1 id="16-在新的页面中单击Generate-new-token生成一个新的GitHub-Token"><a href="#16-在新的页面中单击Generate-new-token生成一个新的GitHub-Token" class="headerlink" title="16. 在新的页面中单击Generate new token生成一个新的GitHub Token"></a>16. 在新的页面中单击<code>Generate new token</code>生成一个新的GitHub Token<img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/Generate%20new%20token.png" srcset="/img/loading.gif" lazyload alt="image-20231223193717763"></h1><h1 id="17-我们选择下面的这种Token"><a href="#17-我们选择下面的这种Token" class="headerlink" title="17. 我们选择下面的这种Token"></a>17. 我们选择下面的这种Token<img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/new%20Token.png" srcset="/img/loading.gif" lazyload alt="image-20231223193847652"></h1><h1 id="18-Token进行如下的设置"><a href="#18-Token进行如下的设置" class="headerlink" title="18. Token进行如下的设置"></a>18. Token进行如下的设置</h1><p><img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E8%AE%BE%E7%BD%AEToken.png" srcset="/img/loading.gif" lazyload alt="image-20231223194658727"></p>
+<h1 id="19-保存Token"><a href="#19-保存Token" class="headerlink" title="19.保存Token"></a>19.保存Token<img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E4%BF%9D%E5%AD%98Token.png" srcset="/img/loading.gif" lazyload alt="image-20231223195022124"></h1><h1 id="20-下载并安装PicGo"><a href="#20-下载并安装PicGo" class="headerlink" title="20. 下载并安装PicGo"></a>20. 下载并安装PicGo</h1><p><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">下载地址</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/PicGo%E7%9A%84%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5.png" srcset="/img/loading.gif" lazyload alt="image-20231223195457252"></p>
+<h1 id="21-安装完后会有该页面出现"><a href="#21-安装完后会有该页面出现" class="headerlink" title="21. 安装完后会有该页面出现"></a>21. 安装完后会有该页面出现</h1><p><img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/PicGo%E7%9A%84%E4%B8%BB%E7%95%8C%E9%9D%A2.png" srcset="/img/loading.gif" lazyload alt="image-20231223195733964"></p>
+<h1 id="22-单击图床设置-找到并点击GitHub"><a href="#22-单击图床设置-找到并点击GitHub" class="headerlink" title="22.  单击图床设置 找到并点击GitHub"></a>22.  单击<code>图床设置</code> 找到并点击<code>GitHub</code></h1><p><img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%9B%BE%E5%BA%8A.png" srcset="/img/loading.gif" lazyload alt="image-20231223195906571"></p>
+<h1 id="23-进行如下的配置并确认。"><a href="#23-进行如下的配置并确认。" class="headerlink" title="23. 进行如下的配置并确认。"></a>23. 进行如下的配置并确认。</h1><p><img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/GitHub%E5%9B%BE%E5%BA%8A%E8%AE%BE%E7%BD%AE.png" srcset="/img/loading.gif" lazyload alt="image-20231223200234673"></p>
+<blockquote>
+<p>使用GitHub仓库作为 图床，存在的问题是国内访问github的速度很慢，可以利用 jsDelivr CDN 来加速访问。jsDelivr 是一个免费开源的CDN 解决方案，该平台是首个打通中国大陆与海外的免费CDN服务，拥有中国政府颁发的 ICP 许可证，无须担心中国防火墙问题而影响使用。使用jsDelivr加速访问，需要将<strong>自定义域名设置为<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/%E7%94%A8%E6%88%B7%E5%90%8D/%E5%9B%BE%E5%BA%8A%E4%BB%93%E5%BA%93%E5%90%8D/@main%E3%80%82">https://cdn.jsdelivr.net/gh/用户名/图床仓库名/@main。</a></strong></p>
+</blockquote>
+<h1 id="24-测试图床功能"><a href="#24-测试图床功能" class="headerlink" title="24. 测试图床功能"></a>24. 测试图床功能</h1><p>返回上传区，上传一张图片试试</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0.png" srcset="/img/loading.gif" lazyload alt="image-20231223200614775"></p>
+<p><strong>上传成功的话，相册里面就会有相应的图片啦，同时在GitHub仓库中也可以看到上传的图片。</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E7%9A%84%E5%9B%BE%E7%89%87.png" srcset="/img/loading.gif" lazyload alt="image-20231223200757142"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/GitHub%E4%B8%8A%E7%9A%84%E5%9B%BE%E7%89%87.png" srcset="/img/loading.gif" lazyload alt="image-20231223200859757"></p>
+<h1 id="25-图床功能使用"><a href="#25-图床功能使用" class="headerlink" title="25. 图床功能使用"></a>25. 图床功能使用</h1><p>单击按钮复制图片的url地址，在你想要插入图片的地方粘贴即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yyyks5836/hexo-images@main/images/%E5%9B%BE%E5%BA%8A%E5%8A%9F%E8%83%BD%E4%BD%BF%E7%94%A8.png" srcset="/img/loading.gif" lazyload alt="image-20231223201227623"></p>
+<p>到此为止就结束了。相信你已经有了自己的图床。✌✌✌</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/blog/" class="category-chain-item">blog</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/GitHub%E3%80%81PicGo/" class="print-no-link">#GitHub、PicGo</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Github+PicGo　＞　一个免费的图床</div>
+      <div>http://yyyks5836.github.io/2023/12/23/Github-PicGo-＞-一个免费的图床/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>洋洋要开森</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年12月23日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2023年12月23日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/12/23/Docker%E5%AD%A6%E4%B9%A0/" title="Docker学习">
+                        <span class="hidden-mobile">Docker学习</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+    <div id="giscus" class="giscus"></div>
+    <script type="text/javascript">
+      Fluid.utils.loadComments('#giscus', function() {
+        var options = {"repo":"yyyks5836/yyyks5836.github.io","repo-id":"R_kgDOKQBd2A","category":"Announcements","category-id":"DIC_kwDOKQBd2M4Cb4nI","theme-light":"light","theme-dark":"dark","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"top","lang":"zh-CN","crossorigin":"anonymous"};
+        var attributes = {};
+        for (let option in options) {
+          if (!option.startsWith('theme-')) {
+            var key = option.startsWith('data-') ? option : 'data-' + option;
+            attributes[key] = options[option];
+          }
+        }
+        var light = 'light';
+        var dark = 'dark';
+        window.GiscusThemeLight = light;
+        window.GiscusThemeDark = dark;
+        attributes['data-theme'] = document.documentElement.getAttribute('data-user-color-scheme') === 'dark' ? dark : light;
+        for (let attribute in attributes) {
+          var value = attributes[attribute];
+          if (value === undefined || value === null || value === '') {
+            delete attributes[attribute];
+          }
+        }
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://giscus.app/client.js');
+        s.setAttribute('crossorigin', 'anonymous');
+        for (let attribute in attributes) {
+          s.setAttribute(attribute, attributes[attribute]);
+        }
+        var ss = document.getElementsByTagName('script');
+        var e = ss.length > 0 ? ss[ss.length - 1] : document.head || document.documentElement;
+        e.parentNode.insertBefore(s, e.nextSibling);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  var relativeDate = function() {
+    var updatedTime = document.getElementById('updated-time');
+    if (updatedTime) {
+      var text = updatedTime.textContent;
+      var reg = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})/;
+      var matchs = text.match(reg);
+      if (matchs) {
+        var relativeTime = moment(matchs[0]).fromNow();
+        updatedTime.textContent = text.replace(reg, relativeTime);
+      }
+      updatedTime.style.display = '';
+    }
+  };
+  Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/moment.min.js', function() {
+    if (!'zh-cn'.startsWith('en')) {
+      Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/locale/zh-cn.min.js', function() {
+        relativeDate();
+      });
+    } else {
+      relativeDate();
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
