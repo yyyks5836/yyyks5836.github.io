@@ -27,7 +27,7 @@ document.addEventListener('visibilitychange', function() {
 //运行天数
 var now = new Date(); 
 function createtime() { 
-    var grt= new Date("5/6/2023 01:18:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
+    var grt= new Date("9/6/2023 01:18:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
     now.setTime(now.getTime()+250); 
     days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
     hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
