@@ -114,10 +114,3 @@ svg {
 #times {
 	font-size: 12px;
 }
-
-/* 设置背景图片 */
-body {
-  background: url(/iamges/home.png);
-  background-attachment: fixed;
-  background-size: cover;  
-}

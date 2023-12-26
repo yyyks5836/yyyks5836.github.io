@@ -10,3 +10,9 @@
     background-size: cover;
     background-repeat: repeat;
   }
+/* 设置背景图片 */
+body {
+  background: url(/images/home.png);
+  background-attachment: fixed;
+  background-size: cover;  
+}
