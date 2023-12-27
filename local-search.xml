@@ -144,4 +144,28 @@
   
   
   
+  
+  
+  <entry>
+    <title>about</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>音乐</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<!-- require APlayer --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><!-- require MetingJS --><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><p><meting-js server="netease" type="playlist" id="2103478889"><br></meting-js></p>]]></content>
+    
+  </entry>
+  
+  
+  
 </search>
